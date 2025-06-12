@@ -27,31 +27,6 @@ HardlyHard is an innovative learning platform that makes complex academic knowle
 - Styling: TailwindCSS
 - AI Integration: LangChain
 
-## Setup
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Set up environment variables:
-Create a `.env` file in the root directory with:
-```
-DATABASE_URL="postgresql://user:password@localhost:5432/hardlyhard"
-OPENAI_API_KEY="your-api-key"
-```
-
-3. Initialize Prisma:
-```bash
-npx prisma generate
-npx prisma db push
-```
-
-4. Run the development server:
-```bash
-npm run dev
-```
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
