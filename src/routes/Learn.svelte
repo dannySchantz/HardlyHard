@@ -34,54 +34,53 @@
   }
 </script>
 
-<div class="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-  <div class="bg-white shadow-xl rounded-lg overflow-hidden">
-    <div class="p-6">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Interactive Learning Session</h2>
-      
-      <div class="space-y-4 mb-4 h-96 overflow-y-auto">
-        {#each messages as message}
-          <div class="flex {message.role === 'user' ? 'justify-end' : 'justify-start'}">
-            <div
-              class="max-w-sm rounded-lg px-4 py-2 {message.role === 'user'
-                ? 'bg-primary-600 text-white'
-                : 'bg-gray-100 text-gray-900'}"
-            >
-              {message.content}
-            </div>
-          </div>
-        {/each}
-        
-        {#if isLoading}
-          <div class="flex justify-start">
-            <div class="max-w-sm rounded-lg px-4 py-2 bg-gray-100">
-              <div class="flex space-x-2">
-                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
-                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
-              </div>
-            </div>
-          </div>
-        {/if}
-      </div>
-
-      <form on:submit|preventDefault={handleSubmit} class="mt-4">
-        <div class="flex space-x-4">
-          <input
-            type="text"
-            bind:value={userInput}
-            placeholder="Ask about any scientific topic..."
-            class="flex-1 rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
-          />
-          <button
-            type="submit"
-            disabled={isLoading}
-            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50"
+<div class="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden">
+  <div class="p-6">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Interactive Learning Session</h2>
+    
+    <div class="space-y-4 mb-4 h-96 overflow-y-auto">
+      {#each messages as message}
+        <div class="flex {message.role === 'user' ? 'justify-end' : 'justify-start'}">
+          <div
+            class="max-w-sm rounded-lg px-4 py-2
+              {message.role === 'user'
+                ? 'bg-primary-600 text-white border border-primary-700 shadow-md dark:bg-primary-400 dark:text-gray-900 dark:border-primary-300'
+                : 'bg-gray-100 text-gray-900 border border-gray-200 shadow-md dark:bg-gray-800 dark:text-gray-100 dark:border-gray-700'}"
           >
-            Send
-          </button>
+            {message.content}
+          </div>
         </div>
-      </form>
+      {/each}
+      
+      {#if isLoading}
+        <div class="flex justify-start">
+          <div class="max-w-sm rounded-lg px-4 py-2 bg-gray-100 dark:bg-gray-800">
+            <div class="flex space-x-2">
+              <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+              <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+              <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+            </div>
+          </div>
+        </div>
+      {/if}
     </div>
+
+    <form on:submit|preventDefault={handleSubmit} class="mt-4">
+      <div class="flex space-x-4">
+        <input
+          type="text"
+          bind:value={userInput}
+          placeholder="Ask about any scientific topic..."
+          class="flex-1 rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700"
+        />
+        <button
+          type="submit"
+          disabled={isLoading}
+          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 dark:bg-primary-400 dark:text-gray-900 dark:hover:bg-primary-500"
+        >
+          Send
+        </button>
+      </div>
+    </form>
   </div>
 </div> 
