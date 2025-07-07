@@ -41,77 +41,41 @@
   });
 </script>
 
-<nav class="bg-white dark:bg-gray-900 shadow-lg dark:shadow-gray-800">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg dark:shadow-gray-800 border-b border-white/20 dark:border-gray-700/30">
   <div class="max-auto">
     <div class="flex h-16 items-center w-full">
       <!-- Left: Logo -->
       <div class="flex-1 flex items-center">
-        <Link to="/" class="ml-4 text-2xl font-bold text-primary-600 dark:text-primary-400">HardlyHard</Link>
+        <Link to="/" class="ml-4 text-2xl font-bold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300">HardlyHard</Link>
       </div>
       <!-- Center: Menu or Mobile Icon -->
       <div class="flex justify-center items-center flex-[2]">
         <!-- Desktop Menu -->
         <div class="hidden sm:flex items-center">
-          {#if isDark}
           <Link
             to="/"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-100 hover:text-primary-600 font-bold"
-          >
+            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 font-bold">
             Home
           </Link>
-          {:else}
-          <Link
-            to="/"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 hover:text-primary-600 font-bold"
-          >
-            Home
-          </Link>
-          {/if}
-          {#if isDark}
+
           <Link
             to="/learn"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-100 hover:text-primary-600 font-bold"
-          >
+            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 font-bold">
             Learn
           </Link>
-          {:else}
-          <Link
-            to="/learn"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 hover:text-primary-600 font-bold"
-          >
-            Learn
-          </Link>
-          {/if}
-          {#if isDark}
+
           <Link
             to="/notes"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-100 hover:text-primary-600 font-bold"
-          >
+            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 font-bold">
             Notes
           </Link>
-          {:else}
-          <Link
-            to="/notes"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 hover:text-primary-600 font-bold"
-          >
-            Notes
-          </Link>
-          {/if}
-          {#if isDark}
-          <Link
+
+          <!-- <Link
             to="/profile"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-100 hover:text-primary-600 font-bold"
-          >
+            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 font-bold">
             Profile
-          </Link>
-          {:else}
-          <Link
-            to="/profile"
-            class="inline-flex items-center px-4 py-1 text-sm font-medium text-gray-900 hover:text-primary-600 font-bold"
-          >
-            Profile
-          </Link>
-          {/if}
+          </Link> -->
+
         </div>
         <!-- Mobile Menu Icon -->
         <div class="sm:hidden flex items-center justify-center">
@@ -176,7 +140,7 @@
   </div>
 
   {#if isMenuOpen}
-    <div class="sm:hidden bg-white dark:bg-gray-900" id="mobile-menu">
+    <div class="sm:hidden bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-white/20 dark:border-gray-700/30" id="mobile-menu">
       <div class="pt-2 pb-3 space-y-1 flex flex-col items-center justify-center">
         <Link
           to="/"

@@ -16,18 +16,10 @@
       <div class="rounded-md shadow">
         <Link
           to="/learn"
-          class="w-full flex items-center font-bold justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 dark:text-primary-50 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-725 md:py-4 md:text-lg md:px-10"
+          class="w-full flex items-center font-bold justify-center border border-transparent text-base font-medium rounded-md text-primary-600 dark:text-primary-400 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-100 md:py-4 md:text-lg md:px-10"
         >
           Start Learning
         </Link>
-      </div>
-      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-        <a
-          href="#features"
-          class="w-full flex items-center font-bold justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 dark:text-primary-50 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-725 md:py-4 md:text-lg md:px-10"
-        >
-          Learn More
-        </a>
       </div>
     </div>
   </div>
@@ -37,13 +29,13 @@
       <div class="pt-6">
         <div class="flow-root bg-gray-50 dark:bg-gray-800 rounded-lg px-6 pb-8">
           <div class="-mt-6">
-            <div class="inline-flex items-center justify-center p-3 bg-primary-500 dark:bg-primary-400 rounded-md shadow-lg dark:shadow-gray-600">
+            <div class="inline-flex items-center justify-center p-3 rounded-md shadow-lg dark:shadow-gray-600">
               <svg class="h-6 w-6 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </div>
             <h3 class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-100 tracking-tight">Scientific Knowledge</h3>
-            <p class="mt-5 text-base text-gray-500 dark:text-gray-300">
+            <p class="mt-5 text-base text-gray-500 dark:text-gray-400">
               Access information exclusively from peer-reviewed articles, patents, and verified scientific sources.
             </p>
           </div>
@@ -53,13 +45,13 @@
       <div class="pt-6">
         <div class="flow-root bg-gray-50 dark:bg-gray-800 rounded-lg px-6 pb-8">
           <div class="-mt-6">
-            <div class=" inline-flex items-center justify-center p-3 bg-primary-500 dark:bg-primary-400 rounded-md shadow-lg dark:shadow-gray-600">
+            <div class=" inline-flex items-center justify-center p-3 rounded-md shadow-lg dark:shadow-gray-600">
               <svg class="h-6 w-6 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
             </div>
             <h3 class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-100 tracking-tight">Spaced Repetition</h3>
-            <p class="mt-5 text-base text-gray-500 dark:text-gray-300">
+            <p class="mt-5 text-base text-gray-500 dark:text-gray-400">
               Retain knowledge better with our intelligent spaced repetition system that adapts to your learning pace.
             </p>
           </div>
@@ -69,13 +61,13 @@
       <div class="pt-6">
         <div class="flow-root bg-gray-50 dark:bg-gray-800 rounded-lg px-6 pb-8">
           <div class="-mt-6">
-            <div class="inline-flex items-center justify-center p-3 bg-primary-500 dark:bg-primary-400 rounded-md shadow-lg dark:shadow-gray-600">
+            <div class="inline-flex items-center justify-center p-3 rounded-md shadow-lg dark:shadow-gray-600">
               <svg class="h-6 w-6 text-gray-900 dark:text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
               </svg>
             </div>
             <h3 class="mt-8 text-lg font-medium text-gray-900 dark:text-gray-100 tracking-tight">Personalized Learning</h3>
-            <p class="mt-5 text-base text-gray-500 dark:text-gray-300">
+            <p class="mt-5 text-base text-gray-500 dark:text-gray-400">
               Experience adaptive learning paths that adjust to your understanding and previous knowledge.
             </p>
           </div>
